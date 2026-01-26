@@ -1362,6 +1362,7 @@ async def admin_get_settings(request: Request):
             "duckmail_verify_ssl": config.basic.duckmail_verify_ssl,
             "browser_engine": config.basic.browser_engine,
             "browser_headless": config.basic.browser_headless,
+            "steel_api_key": config.basic.steel_api_key,
             "refresh_window_hours": config.basic.refresh_window_hours,
             "register_default_count": config.basic.register_default_count,
             "register_domain": config.basic.register_domain,
@@ -1409,6 +1410,7 @@ async def admin_update_settings(request: Request, new_settings: dict = Body(...)
         basic.setdefault("duckmail_verify_ssl", config.basic.duckmail_verify_ssl)
         basic.setdefault("browser_engine", config.basic.browser_engine)
         basic.setdefault("browser_headless", config.basic.browser_headless)
+        basic.setdefault("steel_api_key", config.basic.steel_api_key)
         basic.setdefault("refresh_window_hours", config.basic.refresh_window_hours)
         basic.setdefault("register_default_count", config.basic.register_default_count)
         basic.setdefault("register_domain", config.basic.register_domain)

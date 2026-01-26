@@ -77,6 +77,7 @@ export interface Settings {
     duckmail_verify_ssl?: boolean
     browser_engine?: string
     browser_headless?: boolean
+    steel_api_key?: string
     refresh_window_hours?: number
     register_default_count?: number
     register_domain?: string
